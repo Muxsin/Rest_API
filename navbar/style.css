@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #302e43;
+    color: white;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    transition: all ease 0.6s;
+}
+
+.user:hover {
+    background-color: #444253b2;
+    box-shadow: 0 0 4px rgba(32, 32, 32, 0.2);
+}
+
+.vertical-line {
+    display: none;
+    background-color: rgb(34, 179, 65);
+    width: 5px;
+}
+
+.user:hover .vertical-line {
+    display: block;
+}
+
+.user-avatar > img {
+    border-radius: 50%;
+    padding: 14px 0 14px 24px;
+}
+
+.user-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;}
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+.user-id {
+    color: rgba(209, 208, 208, 0.637);
+}
+
+/* ------------------------- */
+
+.header {
+    text-align: center;
+    padding: 14px 24px;
+}
+
+.header p {
+    color: rgba(228, 226, 226, 0.959);
+}
+
+.navbar {
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+    box-shadow: 0 0 4px rgba(32, 32, 32, 0.2);
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+}
+
+.nav-item:hover {
+    background-color: rgb(34, 179, 65);
+}
+
+.nav-item a {
+    color: white;
+    font-size: 18px;
+}

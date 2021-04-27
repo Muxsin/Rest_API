@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Lasde</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a onclick="slideMenuAnimation()">
+                <i class="fa fa-bars open"></i>
+            </a>
+            <p class="page-name">Home</p>
+            <a>
+                <i class="fa fa-search search-icon"></i>
+            </a>
+        </header>
+        <nav class="navbar">
+            <a onclick="changeMode()"><i class="fa fa-lightbulb"></i></a>
+            <div class="user-content">
+                <div class="user-avatar">
+                    <img src="https://randomuser.me/api/portraits/med/men/10.jpg" alt="user-avatar">
+                </div>
+                <div class="user-info">
+                    <div>
+                        <div class="user-name">Brad Gibson</div>
+                        <div class="user-phone">011-962-7516</div>
+                    </div>
+                    <div>
+                        <a onclick="dropDown()"><i class="fa fa-caret-down dropDown"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-description" id="desc">
+                <p>Account</p>
+                <div class="user-email">
+                    brad.gibson@example.com
+                </div>
+                <div class="user-username">
+                    @silverswan131
+                </div>
+                <div class="user-bio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="#" class="nav-item"><i class="fa fa-home menu-icon"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item"><i class="fa fa-user menu-icon"></i> Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item"><i class="fa fa-exclamation-circle menu-icon"></i> About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="create-post-box">
+                <button class="create-post-btn"><span class="pencil">&#x270E;</span> Create post</button>
+            </div>
+
+            <div class="familiar-users-box">
+                <div class="familiar-users-header">
+                    <p class="text-familiar-users-header">Perhaps you are familiar</p>
+                    <a class="show-all-familiar-users">Show all</a>
+                </div>
+                <div class="familiar-users">
+                    <div class="familiar-user">
+                        <div class="familiar-user-avatar">
+                            <img src="https://randomuser.me/api/portraits/med/men/19.jpg" class="familiar-user-avatar" alt="user-avatar">
+                        </div>
+                        <div class="familiar-user-name">Brad Gibson</div>
+                    </div>
+                    <hr>
+                    <div class="familiar-user">
+                        <div class="familiar-user-avatar">
+                            <img src="https://randomuser.me/api/portraits/med/women/29.jpg" class="familiar-user-avatar" alt="user-avatar">
+                        </div>
+                        <div class="familiar-user-name">Vickie Hale</div>
+                    </div>
+                    <hr>
+                    <div class="familiar-user">
+                        <div class="familiar-user-avatar">
+                            <img src="https://randomuser.me/api/portraits/med/women/39.jpg" class="familiar-user-avatar" alt="user-avatar">
+                        </div>
+                        <div class="familiar-user-name">Lois Turner</div>
+                    </div>
+                    <hr>
+                    <div class="familiar-user">
+                        <div class="familiar-user-avatar">
+                            <img src="https://randomuser.me/api/portraits/med/men/29.jpg" class="familiar-user-avatar" alt="user-avatar">
+                        </div>
+                        <div class="familiar-user-name">Florence Hill </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-box">
+                <div class="post-card">
+                    <div class="posted-user-info">
+                        <div class="posted-user-avatar">
+                            <img src="https://via.placeholder.com/150/92c952" alt="user-avatar">
+                        </div>
+                        <div class="posted-user-name">
+                            Enrique Grant
+                        </div>
+                        <div class="drop-down-dot-box">
+                            <div class="dropw-down-dot">
+                                <a onclick="openDropDown(this)"><i class="fa fa-ellipsis-v"></i></a>
+                            </div>
+                            <div class="drop-down-body" id="">
+                                <a onclick="closeDropDown(this)" class="close-drop-down"><i class="fa fa-times"></i></a>
+                                <a class="drop-down-body-item" href="#">View</a>
+                                <a onclick="closeDropDown(this)" class="drop-down-body-item">Copy Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-header">
+                            Sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+                        </div>
+                        <div class="post-body">
+                            Est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
+                        </div>
+                    </div>
+                    <div class="post-status">
+                        <div class="post-status-left">
+                            <a onclick="likePost(this)"><i class="fa fa-heart post-status-icon"></i></a>
+                            <a><i class="fa fa-comments post-status-icon"></i></a>
+                            <a><i class="fa fa-share post-status-icon"></i></a>
+                        </div>
+                        <div class="post-status-right">
+                            <i class="fa fa-eye post-status-icon"></i>
+                            <p class="looked-count">14k</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="posted-user-info">
+                        <div class="posted-user-avatar">
+                            <img src="https://via.placeholder.com/150/771796" alt="user-avatar">
+                        </div>
+                        <div class="posted-user-name">
+                            Alexis Rodriquez
+                        </div>
+                        <div class="drop-down-dot-box">
+                            <div class="dropw-down-dot">
+                                <a onclick="openDropDown(this)"><i class="fa fa-ellipsis-v"></i></a>
+                            </div>
+                            <div class="drop-down-body">
+                                <a onclick="closeDropDown(this)" class="close-drop-down"><i class="fa fa-times"></i></a>
+                                <a class="drop-down-body-item" href="#">View</a>
+                                <a onclick="closeDropDown(this)" class="drop-down-body-item">Copy Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-header">
+                            Sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+                        </div>
+                        <div class="post-body">
+                            Est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla
+                        </div>
+                    </div>
+                    <div class="post-status">
+                        <div class="post-status-left">
+                            <a onclick="likePost(this)"><i class="fa fa-heart post-status-icon liked"></i></a>
+                            <a><i class="fa fa-comments post-status-icon"></i></a>
+                            <a><i class="fa fa-share post-status-icon"></i></a>
+                        </div>
+                        <div class="post-status-right">
+                            <i class="fa fa-eye post-status-icon"></i>
+                            <p class="looked-count">14k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
