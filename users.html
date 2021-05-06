@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Lasde</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a onclick="slideMenuAnimation()">
+                <i class="fa fa-bars open"></i>
+            </a>
+            <p class="page-name">Users</p>
+            <a>
+                <i class="fa fa-search search-icon"></i>
+            </a>
+        </header>
+        <nav class="navbar">
+            <a onclick="changeMode()"><i class="fa fa-lightbulb"></i></a>
+            <div class="user-content">
+                <div class="user-avatar">
+                    <img src="https://randomuser.me/api/portraits/med/men/10.jpg" alt="user-avatar">
+                </div>
+                <div class="user-info">
+                    <div>
+                        <div class="user-name">Brad Gibson</div>
+                        <div class="user-phone">011-962-7516</div>
+                    </div>
+                    <div>
+                        <a onclick="dropDown()"><i class="fa fa-caret-down dropDown"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-description" id="desc">
+                <p>Account</p>
+                <div class="user-email">
+                    brad.gibson@example.com
+                </div>
+                <div class="user-username">
+                    @silverswan131
+                </div>
+                <div class="user-bio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="index.html" class="nav-item"><i class="fa fa-home menu-icon"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item"><i class="fa fa-user menu-icon"></i> Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item"><i class="fa fa-exclamation-circle menu-icon"></i> About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="users-box">
+                <div class="users-header">
+                    <p class="text-familiar-users-header">All users</p>
+                </div>
+                <template id="user-template">
+                    <div class="user">
+                        <div>
+                            <img src="https://randomuser.me/api/portraits/med/men/19.jpg" class="familiar-user-avatar" alt="user-avatar">
+                        </div>
+                        <div class="familiar-user-name">Brad Gibson</div>
+                    </div>
+                </template>
+
+                <div class="users">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/users.js"></script>
+</body>
+</html>
